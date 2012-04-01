@@ -7,6 +7,9 @@ gem 'rails', '3.2.3'
 
 gem 'sqlite3'
 
+gem 'haml'
+gem 'kaminari'
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +24,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'therubyracer', '>= 0.9.8'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -36,3 +40,12 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :development, :test do
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'haml-rails'
+  gem 'hpricot'
+  gem 'ruby_parser'
+  gem 'web-app-theme'
+end
