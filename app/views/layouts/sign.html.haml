@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Rails3.2.3 app
+    = stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/drastic-dark/style", "web-app-theme/override", :cache => true
+    = csrf_meta_tag
+  %body
+    #container
+      #box
+        = yield
